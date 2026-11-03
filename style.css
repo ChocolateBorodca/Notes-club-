@@ -1,0 +1,132 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.ambient-status {
+    font-size: 10px;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.row-toggle {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.btn-toggle {
+    flex: 1;
+    background-color: #111111;
+    border: 1px solid #222222;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-toggle.active {
+    background-color: #1a1a1a;
+    border-color: #444444;
+}
+
+.input-container {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 16px;
+    position: relative;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #888888;
+    font-family: inherit;
+    flex-grow: 1;
+}
+
+.note-textarea:focus {
+    color: #ffffff;
+}
+
+.mic-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #1c1c1e;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mic-btn svg {
+    fill: #ffffff;
+    width: 18px;
+    height: 18px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #0a0a0a;
+    border: 1px solid #161616;
+    color: #444444;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.btn-submit.ready {
+    color: #ffffff;
+    background-color: #1c1c1e;
+    border-color: #333333;
+}
